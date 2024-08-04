@@ -1,3 +1,4 @@
+import Uploader from "../data/Uploader";
 import BookingTable from "../features/bookings/BookingTable";
 import BookingTableOperations from "../features/bookings/BookingTableOperations";
 import Heading from "../ui/Heading";
@@ -11,6 +12,7 @@ function Bookings() {
         <BookingTableOperations />
       </Row>
       <BookingTable />
+      <Uploader />
     </>
   );
 }

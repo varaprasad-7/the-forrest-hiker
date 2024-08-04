@@ -113,6 +113,18 @@ export async function updateBooking(id, obj) {
   return data;
 }
 
+export async function createBooking(newBooking) {
+  let query = supabase.from("bookings");
+
+  const { data, error } = await query.insert([...newBooking]);
+
+  if (error) {
+    console.error(error);
+    throw new Error("Booking could not be updated");
+  }
+  return data;
+}
+
 export async function deleteBooking(id) {
   // REMEMBER RLS POLICIES
   const { data, error } = await supabase.from("bookings").delete().eq("id", id);

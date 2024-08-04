@@ -2,9 +2,8 @@
 
 export const guests = [
   {
-    // id: 1000,
-    fullName: "Durga VaraPrasad",
-    email: "varaprasad@test.com",
+    fullName: "Jaggu",
+    email: "jaggu@test.com",
     nationality: "Indian",
     nationalID: "3525436345",
     countryFlag: "https://flagcdn.com/in.svg",
